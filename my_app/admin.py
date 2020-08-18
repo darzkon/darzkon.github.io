@@ -1,7 +1,8 @@
 from django.contrib import admin
-from.models import Data
+from .models import Data
 
 # Register your models here.
+
 class DataAdmin(admin.ModelAdmin):
-    list_display = ('title', 'pricing', 'isActive')
+    pass
 admin.site.register(Data, DataAdmin)
