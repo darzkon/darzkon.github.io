@@ -13,7 +13,7 @@
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="{% url 'home' %}">Главная</a>
     <a class="p-2 text-dark" href="{% url 'about' %}">О Нас</a>
-    <a class="p-2 text-dark" href="{% url 'about' %}">Тарифы</a>
+    <a class="p-2 text-dark" href="{% url 'tarif' %}">Тарифы</a>
   </nav>
   <a class="btn btn-outline-primary" href="{% url 'login' %}">Личный кабинет</a>
 </div>
@@ -24,10 +24,12 @@
   <!-- About block -->
   {% block about %}
   {% endblock %}
-  <!-- Register block -->
+  <!-- Login block -->
   {% block login %}
   {% endblock %}
-
+  <!-- Tarif section -->
+  {% block tarif %}
+  {% endblock %}
 
 
 

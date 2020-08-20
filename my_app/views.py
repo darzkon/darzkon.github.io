@@ -10,3 +10,6 @@ def about(request):
 
 def login(request):
 	return render(request, 'auth/login.html')
+
+def tarif(request):
+	return render(request, 'my_app/tarif.html')
