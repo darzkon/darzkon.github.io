@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block login %}
+
+      <div class="row no-gutters">
+          <div class="col-md-8 col-lg-7 col-xl-6 offset-md-2 offset-lg-2 offset-xl-3 space-top-3 space-lg-0">
+            <!-- Form -->
+            <form class="js-validate" novalidate="novalidate" method="POST">
+              <!-- Title -->
+              <div class="mb-5 mb-md-7">
+                <h1 class="h2">Welcome back</h1>
+                <p>Login to manage your account.</p>
+              </div>
+              <!-- End Title -->
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signinSrEmail">Username</label>
+                <input type="username" class="form-control" name="username" id="signinSrEmail" tabindex="1" placeholder="username" aria-label="Username" required="" data-msg="Please enter a valid email address.">
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Form Group -->
+              <div class="js-form-message form-group">
+                <label class="input-label" for="signinSrPassword" tabindex="0">
+                  <span class="d-flex justify-content-between align-items-center">
+                    Password
+                    
+                  </span>
+                </label>
+                <input type="password" class="form-control" name="password" id="signinSrPassword" tabindex="2" placeholder="********" aria-label="********" required="" data-msg="Your password is invalid. Please try again.">
+              </div>
+              <!-- End Form Group -->
+
+              <!-- Button -->
+              <div class="row align-items-center mb-5">
+                <div class="col-sm-6 text-sm-right">
+                  <button type="submit" class="btn btn-primary transition-3d-hover">Войти</button>
+                </div>
+              </div>
+              <!-- End Button -->
+            </form>
+            <!-- End Form -->
+          </div>
+        </div>
+{% endblock %}
