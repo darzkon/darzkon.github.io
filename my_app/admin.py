@@ -4,5 +4,7 @@ from .models import Data
 # Register your models here.
 
 class DataAdmin(admin.ModelAdmin):
-    pass
+     list_display = ['title', 'text']
+
+
 admin.site.register(Data, DataAdmin)
